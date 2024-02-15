@@ -1,8 +1,9 @@
-let gameResult = document.getElementById("gameResult");
-let userInput = document.getElementById("userInput");
-let randomNumber = Math.ceil(Math.random() * 100);
+
 
 function checkGuess() {
+    let gameResult = document.getElementById("gameResult");
+    let userInput = document.getElementById("userInput");
+    let randomNumber = Math.ceil(Math.random() * 100);
     let guessedNumber = parseInt(userInput.value);
     if (guessedNumber === randomNumber) {
         gameResult.textContent = "Congratulations!";
